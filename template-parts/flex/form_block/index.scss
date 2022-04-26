@@ -1,0 +1,66 @@
+.form-block {
+    position: relative;
+    background-color: $black;
+    // background-image: url();
+    padding: 121px 121px 132px;
+    &__heading {
+        @include block-heading(490px, 33px);
+    }
+    &__content {
+        color: $white;
+        padding-right: 55px;
+        font-size: 20px;
+        line-height: 32px;
+        &__content {
+            max-width: 490px;
+        }
+    }
+    &__form {
+        padding-left: 55px;
+
+        form {
+            .gform_fields {
+                grid-row-gap: 22px !important;
+            }
+            .gfield {
+                label {
+                    display: none;
+                }
+                input, textarea {
+                    font-family: 'Inter V';
+                    font-size: 16px !important;
+                    line-height: 21px;
+                    padding: 15px 24px 14px !important;
+                    width: 100%;
+                    background-color: rgba($white, .1);
+                    color: $white;
+                    border-style: none;
+                }
+                input {
+                    border-radius: 100px
+                }
+                textarea {
+                    border-radius: 20px;
+                    height: 220px !important;
+                }
+            }
+            .gform_footer {
+                padding-bottom: 0 !important;
+                .gform_button {
+                    @extend %button;
+                    color: $white;
+                    background: $red;
+                    border-color: $red;
+                    padding: 15px 29px 14px;
+                    margin-bottom: 0 !important;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .dots {
+        position: absolute;
+        bottom:0;
+        right: 0;
+    }
+}

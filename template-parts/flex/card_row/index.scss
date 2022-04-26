@@ -1,0 +1,32 @@
+.card-row {
+    padding: 87px 50px;
+    &__heading {
+        @include block-heading(800px, 125px);
+    }
+    &__gray_white {
+        background-color: $light_gray;
+        .card-row__card {
+            background-color: $white;
+        }
+    }
+    &__white_gray {
+        background-color: $white;
+        .card-row__card {
+            background-color: $light_gray;
+        }
+    }
+    &__card {
+        border-radius: 8px;
+        padding: 41px 37px 36px;
+        &__heading {
+            font-family: 'Gelion', sans-serif;
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: 600;
+        }
+        &__content {
+            font-size: 20px;
+            line-height: 32px;
+        }
+    }
+}

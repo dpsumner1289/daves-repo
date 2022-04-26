@@ -1,0 +1,58 @@
+.hero {
+    padding: 69px 0 80px;
+    position: relative;
+    &__heading {
+        font-size: 80px;
+        line-height: 80px;
+        margin-top: 0;
+        margin-bottom: 52px;
+        p {
+            font-family: 'Gelion';
+            font-weight: 500;
+            margin: 0;
+        }
+    }
+    &__subheading {
+        font-size: 20px;
+        line-height: 32px;
+    }
+    &__eyebrow-heading {
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+    }
+    &__content-text {
+        max-width: 650px;
+        p {
+            margin: 0;
+        }
+    }
+    &__content-text, 
+    &__checkbox-list {
+        font-size: 20px;
+        line-height: 32px;
+    }
+    &__checkbox-list {
+        li {
+            list-style: none;
+            margin-bottom: 10px;
+            .circle-check {
+                padding-top: 7px;
+                margin-right: 12px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .dots-top {
+        position:absolute;
+        top: 0;
+        left: 0;
+    }
+    .dots-bottom {
+        position:absolute;
+        bottom: 0;
+        right: 0;
+    }
+}

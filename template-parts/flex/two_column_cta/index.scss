@@ -1,0 +1,65 @@
+.two-column-cta {
+    padding: 0 50px;
+    .container {
+        padding: 93px 133px 136px;
+        background-color: $light_gray;
+    }
+    &__headings {
+        &__eyebrow_heading {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        &__heading {
+            @include block-heading(950px, 33px);
+        }
+        &__subheading {
+            max-width: 650px;
+            font-size: 20px;
+            line-height: 32px;
+            margin-bottom: 100px;
+            text-align: center;
+        }
+        &__heading, &__subheading {
+            p:last-of-type {
+                text-align: center;
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__ctas {
+        &__column {
+            &--wrapper {
+                max-width: 560px;
+            }
+            &__heading {
+                font-size: 32px;
+                line-height: 40px;
+                margin-bottom: 20px;
+            }
+            &__content {
+                font-size: 20px;
+                line-height: 32px;
+                margin-bottom: 27px;
+            }
+            &__list {
+                list-style: none;
+                padding-left: 0;
+                li {
+                    @extend %flex,
+                        %afs;
+                    font-size: 20px;
+                    line-height: 32px;
+                    &:not(:last-of-type) {
+                        margin-bottom: 16px;
+                    }
+                    img {
+                        margin: 6px 14px 0 0;
+                    }
+                }
+            }
+            &__button {
+                @extend %button;
+            }
+        }
+    }
+}

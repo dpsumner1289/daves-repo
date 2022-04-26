@@ -1,0 +1,48 @@
+.two-column-info {
+    margin-bottom: 90px;
+    &__eyebrow-heading {
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+    }
+    &__heading {
+        font-family: 'Gelion', sans-serif;
+        font-size: 56px;
+        line-height: 56px;
+        font-weight: 600;
+        margin: 0;
+        p {
+            margin: 0;
+        }
+    }
+    &__right-column {
+        padding-left: 50px;
+    }
+    &__content-text {
+        font-size: 20px;
+        line-height: 32px;
+        p:first-child {
+            margin-top: 0;
+        }
+    }
+    &__statistics {
+        margin-bottom: 42px;
+        .stat {
+            &__figure {
+                font-family: 'Gelion', sans-serif;
+                color: $red;
+                font-size: 56px;
+                line-height: 56px;
+                font-weight: 600;
+                margin: 0 0 16px;
+            }
+            &__title {
+                font-family: 'Inter V', sans-serif;
+                font-size: 16px;
+                line-height: 20px;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
